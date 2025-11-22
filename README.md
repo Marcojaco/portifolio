@@ -5,13 +5,13 @@ Criado para servir como cartão de visita digital — leve, rápido e fácil de 
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Este portfólio foi desenvolvido para apresentar minhas habilidades e experiências de forma clara e direta.  
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - Página inicial com apresentação rápida  
 - Seção de projetos  
@@ -22,7 +22,7 @@ Este portfólio foi desenvolvido para apresentar minhas habilidades e experiênc
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 Dependendo da sua implementação atual:
 
