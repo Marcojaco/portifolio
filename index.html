@@ -1,215 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="templates/css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<!-- SEO -->
+<title>Marco J Borges | Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de Marco J Borges, desenvolvedor Full Stack focado em Front-End, com base em HTML, CSS, JavaScript, Python e MySQL.">
+<meta name="author" content="Marco J Borges">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <title>Marco J Borges</title>
+<!-- Open Graph / compartilhamento (LinkedIn, WhatsApp, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marco J Borges | Desenvolvedor Full Stack">
+<meta property="og:description" content="Portfólio de Marco J Borges, desenvolvedor Full Stack focado em Front-End, com base em HTML, CSS, JavaScript, Python e MySQL.">
+<meta property="og:image" content="https://portifolio-l4wu.vercel.app/templates/img/eu.png">
+<meta property="og:url" content="https://portifolio-l4wu.vercel.app/">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marco J Borges | Desenvolvedor Full Stack">
+<meta name="twitter:description" content="Portfólio de Marco J Borges, desenvolvedor Full Stack focado em Front-End, com base em HTML, CSS, JavaScript, Python e MySQL.">
+<meta name="twitter:image" content="https://portifolio-l4wu.vercel.app/templates/img/eu.png">
+
+<link rel="stylesheet" href="templates/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-    <video class="video-bg" autoplay muted loop playsinline>
-        <source src="templates/videos/video_de_fundo.mp4" type="video/mp4">
-    </video>
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="templates/videos/video_de_fundo.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
 
-    <div class="overlay"></div>
+<header class="navbar">
+    <h5 id="nome-navbar">Marco J Borges</h5>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuMobile">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="menuMobile">
+        <a href="#inicio" class="active">inicio</a>
+        <a href="#sobre">sobre</a>
+        <a href="#projetos">projetos</a>
+        <a href="#contato">contato</a>
+    </nav>
+</header>
 
-    <header class="navbar">
-        <h5 id="nome-navbar">Marco J Borges</h5>
-        <nav>
-            <a href="#inicio" class="active">inicio</a>
-            <a href="#sobre">sobre</a>
-            <a href="#projetos">projetos</a>
-            <a href="#contato">contato</a>
-        </nav>
+<main>
 
-    </header>
+<section id="inicio">
+    <div class="nomes">
+        <div id="nomeGrande">
+            <h1>Marco J Borges</h1>
+        </div>
+        <div id="subtitulo">
+            <h3>Desenvolvedor Front-End</h3>
+        </div>
+    </div>
+</section>
 
-    <main>
-
-        <section id="inicio">
-            <div class="nomes">
-
-                <div id="nomeGrande">
-                    <h1>Marco J Borges</h1>
-                </div>
-
-                <div id="subtitulo">
-                    <h3>Desenvolvedor Front-End</h3>
-                </div>
-
+<section id="sobre">
+    <div id="infos" class="animate-left">
+        <h3>Sobre mim:</h3>
+        <div id="foto-text">
+            <div id="pequeno-para">
+                <p>
+                    Desenvolvedor Full Stack com foco em Front-End, criando interfaces modernas e bem estruturadas com HTML, CSS e JavaScript. Tenho base sólida em Python e MySQL, o que me permite desenvolver aplicações completas, conectando front-end e back-end com lógica consistente e organização.
+                    Já desenvolvi sistemas com autenticação e integração com banco de dados relacional, sempre priorizando código limpo, performance e boas práticas. Busco construir projetos funcionais, escaláveis e tecnicamente bem fundamentados, indo além do visual e entendendo a arquitetura por trás de cada aplicação.
+                </p>
             </div>
-        </section>
-
-        <section id="sobre">
-            <div id="infos" class="animate-left">
-                <h3>Sobre mim:</h3>
-                <div id="foto-text">
-                    <div id="pequeno-para">
-                        <p>
-                            Desenvolvedor Full Stack com foco em Front-End, criando interfaces modernas e bem estruturadas com HTML, CSS e JavaScript. Tenho base sólida em Python e MySQL, o que me permite desenvolver aplicações completas, conectando front-end e back-end com lógica consistente e organização.
-                            Já desenvolvi sistemas com autenticação e integração com banco de dados relacional, sempre priorizando código limpo, performance e boas práticas. Busco construir projetos funcionais, escaláveis e tecnicamente bem fundamentados, indo além do visual e entendendo a arquitetura por trás de cada aplicação.
-                        </p>      
-                    </div>
-
-                    <div class="foto-wrapper animate-right">
-                        <img id="foto-minha" src="templates/img/eu.png" alt="Minha foto">
-                    </div>
-                </div>
+            <div class="foto-wrapper animate-right">
+                <img id="foto-minha" src="templates/img/eu.png" alt="Foto de Marco J Borges">
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="projetos">
+<section id="projetos">
+    <div class="projeto" id="projeto1">
+        <div class="imagem">
+            <img src="templates/img/projeto1.png" alt="Projeto 1" id="img-projeto1">
+        </div>
+        <div class="infos-projeto">
+            <h3>HQR Mecânica</h3>
+            <p>Landing page feita para a oficina onde eu trabalho, como forma de primeiro projeto profissional</p>
+        </div>
+        <div class="placas">
+            <span class="placas html">HTML</span>
+            <span class="placas css">CSS</span>
+        </div>
+        <div class="acesso-github">
+            <a href="https://github.com/Marcojaco/HQR-Mecanica.git" class="link-projeto">Acesse o código aqui</a>
+        </div>
+    </div>
 
-            <div class="projeto" id="projeto1">
-                <div class="imagem">
-                    <img src="templates/img/projeto1.png" alt="Projeto 1" id="img-projeto1">
-                </div>
-                <div class="infos-projeto">
-                    <h3>HQR Mecanica</h3>
-                    <p>Lading Page feita para a ofina que eu trabalho, como forma de primeiro projeto profissional</p>
-                </div>
-                <div class="placas">
-                    <span class="placas html">HTML</span>
-                    <span class="placas css">CSS</span>
-                </div>
-                <div class="acesso-github">
-                    <a href="https://github.com/Marcojaco/HQR-Mecanica.git" class="link-projeto">Acesse o código aqui</a>
-                </div>
+    <div class="projeto" id="projeto2">
+        <div class="imagem">
+            <img src="templates/img/projeto2.png" alt="Projeto 2" id="img-projeto2">
+        </div>
+        <div class="infos-projeto">
+            <h3>Blog Informativo</h3>
+            <p>Uma página feita para mostrar as consequências do uso das redes sociais pelos adolescentes</p>
+        </div>
+        <div class="placas">
+            <span class="placas html">HTML</span>
+            <span class="placas css">CSS</span>
+            <span class="placas js">JS</span>
+        </div>
+        <div class="acesso-github">
+            <a href="https://github.com/Marcojaco/blog.git" class="link-projeto">Acesse o código aqui</a>
+        </div>
+    </div>
 
-            </div>
+    <div class="projeto" id="projeto3">
+        <div class="imagem">
+            <img src="templates/img/projeto3.png" alt="Projeto 3" id="img-projeto3">
+        </div>
+        <div class="infos-projeto">
+            <h3>Meu Portfólio</h3>
+            <p>Meu portfólio, o meu primeiro projeto pessoal concluído, onde coloquei em prática tudo que eu sei</p>
+        </div>
+        <div class="placas">
+            <span class="placas html">HTML</span>
+            <span class="placas css">CSS</span>
+        </div>
+        <div class="acesso-github">
+            <a href="https://github.com/Marcojaco/Portifolio.git" class="link-projeto">Acesse o código aqui</a>
+        </div>
+    </div>
+</section>
 
-            <div class="projeto" id="projeto2">
-                <div class="imagem">
-                    <img src="templates/img/projeto2.png" alt="Projeto 2" id="img-projeto2">
-                </div>
-                <div class="infos-projeto">
-                    <h3>BLOG-infomativo</h3>
-                    <p>Uma página feita para mostrar as consequências do uso das redes socias pelos adolescentes </p>
-                </div>
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <div class="social-buttons">
+        <a href="https://wa.me/5531991847266" target="_blank" class="icon-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/_mj_borges_" target="_blank" class="icon-btn instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/marco-jacob-borges-232675344/" target="_blank" class="icon-btn linkedin" aria-label="Linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Marcojaco" target="_blank" class="icon-btn github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <div id="formulario">
+        <form action="https://formsubmit.co/marcojacobborges26@gmail.com" method="POST" class="form-contato">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nova mensagem do site">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </div>
+</section>
 
-                <div class="placas">
-                    <span class="placas html">HTML</span>
-                    <span class="placas css">CSS</span>
-                    <span class="placas js">JS</span>
-                </div>
-                <div class="acesso-github">
-                    <a href="https://github.com/Marcojaco/blog.git" class="link-projeto">Acesse o código aqui</a>
-                </div>
+</main>
 
-            </div>
+<footer class="footer">
+    <p>© 2026 Marco J Borges. Todos os direitos reservados.</p>
+</footer>
 
-            <div class="projeto" id="projeto3">
-                <div class="imagem">
-                    <img src="templates/img/projeto3.png" alt="Projeto 3" id="img-projeto3">
-                </div>
-                <div class="infos-projeto">
-                    <h3>Meu Portifolio</h3>
-                    <p>Meu Portifolio, o meu primeiro projeto pessoal que foi concluido, onde coloque em pratica, tudo que eu sei</p>
-                </div>
-                <div class="placas">
-                    <span class="placas html">HTML</span>
-                    <span class="placas css">CSS</span>
-                </div>
-                <div class="acesso-github">
-                    <a href="https://github.com/Marcojaco/Portifolio.git" class="link-projeto">Acesse o código aqui</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="contato" class="contato">
-            <h2>Contato</h2>
-
-            <div class="social-buttons">
-                <a
-                    href="https://wa.me/5531991847266"
-                    target="_blank"
-                    class="icon-btn whatsapp"
-                    aria-label="WhatsApp"
-                >
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-
-                <a
-                    href="https://instagram.com/_mj_borges_"
-                    target="_blank"
-                    class="icon-btn instagram"
-                    aria-label="Instagram"
-                >
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a
-                    href="https://linkedin.com/in/marco-jacob-borges-232675344/"
-                    target="_blank"
-                    class="icon-btn linkedin"
-                    aria-label="Linkedin"
-                >
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a 
-                    href="https://github.com/Marcojaco" 
-                    target="_blank"
-                    class="icon-btn github"
-                    aria-label="GitHub"
-                >
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-
-            <div id="formulario">
-                <form action="https://formsubmit.co/marcojacobborges26@gmail.com" method="POST" class="form-contato">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Nova mensagem do site">
-
-                    <input type="text" name="name" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu email" required>
-                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
-
-                    <button type="submit">Enviar mensagem</button>
-                </form>
-            </div>
-        </section>
-    </main> 
-
-    <footer class="footer">
-        <p>© 2026 Marco J Borges. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
 <script>
-    const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+            entry.target.classList.add("show");
         } else {
-        entry.target.classList.remove("show");
+            entry.target.classList.remove("show");
         }
     });
-    }, {
+}, {
     threshold: 0.2
-    });
+});
 
-    document.querySelectorAll(".animate-left, .animate-right")
+document.querySelectorAll(".animate-left, .animate-right")
     .forEach(el => observer.observe(el));
-</script>
 
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const menuMobile = document.getElementById("menuMobile");
+
+hamburgerBtn.addEventListener("click", () => {
+    const isOpen = menuMobile.classList.toggle("open");
+    hamburgerBtn.classList.toggle("open");
+    hamburgerBtn.setAttribute("aria-expanded", isOpen);
+});
+
+menuMobile.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuMobile.classList.remove("open");
+        hamburgerBtn.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+    });
+});
+</script>
+</body>
 </html>

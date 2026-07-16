@@ -102,6 +102,42 @@ nav a:hover::after,
 nav a.active::after {
     width: 100%;
 }
+
+/* Botão hambúrguer: fica escondido no desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 /* -------------------------------------------------------------*/
 
 .nomes {
@@ -453,7 +489,36 @@ nav a.active::after {
 }
 
 /* -------------------------------------------------------------*/
+/* RESPONSIVIDADE */
+/* -------------------------------------------------------------*/
 
+/* TABLET (1024px e abaixo): projetos em 2 colunas, navbar ganha mais respiro */
+@media (max-width: 1024px) {
+    .navbar {
+        margin-right: 20px;
+    }
+
+    .navbar nav {
+        gap: 20px;
+    }
+
+    #foto-text {
+        grid-template-columns: 1fr 300px;
+        gap: 30px;
+    }
+
+    #foto-minha {
+        width: 280px;
+        height: 280px;
+    }
+
+    #projetos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+}
+
+/* MOBILE (768px e abaixo) */
 @media (max-width: 768px) {
     .video-bg {
         display: none;
@@ -470,29 +535,69 @@ nav a.active::after {
     .navbar {
         height: 60px;
         margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+        justify-content: space-between;
     }
 
     #nome-navbar {
-        display: none;
-
-    }
-
-    nav a {
-        font-size: 0.9rem;
-        padding: 8px 0;
-    }
-
-    #nomeGrande {
+        display: block;
         font-size: 20px;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background: rgba(4, 25, 143, 0.97);
+        backdrop-filter: blur(8px);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .navbar nav.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 16px 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav a::after {
+        display: none;
+    }
+
+    #nomeGrande {
+        font-size: 40px;
+    }
+
     #subtitulo {
-        font-size: 17px;
+        font-size: 22px;
     }
 
     #infos h3 {
         font-size: 28px;
         text-align: center;
+        margin-left: 0;
     }
 
     #infos p {
@@ -515,9 +620,20 @@ nav a.active::after {
 
     #projetos {
         display: flex;
+        flex-direction: column;
         gap: 24px;
-        padding: 40px;
-    }   
+        padding: 40px 20px;
+    }
+
+    .imagem {
+        height: auto;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
     .contato h2 {
         font-size: 28px;
@@ -531,5 +647,63 @@ nav a.active::after {
         width: 50px;
         height: 50px;
         font-size: 1.4rem;
+    }
+}
+
+/* MOBILE PEQUENO (480px e abaixo): celulares estreitos */
+@media (max-width: 480px) {
+    #nome-navbar {
+        font-size: 17px;
+    }
+
+    #nomeGrande {
+        font-size: 32px;
+    }
+
+    #subtitulo {
+        font-size: 18px;
+    }
+
+    #subtitulo h3 {
+        width: 23ch;
+        max-width: 100%;
+    }
+
+    #infos h3 {
+        font-size: 24px;
+    }
+
+    #infos p {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #foto-minha {
+        width: 200px;
+        height: 200px;
+    }
+
+    .infos-projeto h3 {
+        font-size: 24px;
+    }
+
+    .infos-projeto p {
+        font-size: 1rem;
+    }
+
+    .acesso-github {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .form-contato input,
+    .form-contato textarea {
+        font-size: 0.95rem;
+    }
+
+    .icon-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 1.3rem;
     }
 }
